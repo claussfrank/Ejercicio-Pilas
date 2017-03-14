@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Stack </title>
+  </head>
+  <body>
+    <script>
+    var nombreCompleto = [];
+
+
+    function Stack(){
+      var item =[];
+      this.add = function(elemento){
+        item.push(elemento);
+      };
+      this.print = function (){
+        console.log(item);
+      };
+      this.pop = function(){
+        return item.pop();
+      };
+    }
+    var nombre = new Stack();
+    nombre.add("Laura");
+    nombre.add("Diana");
+    nombre.add("Rosa");
+    nombre.add("Jorge");
+    nombre.add("Raúl");
+    nombre.print();
+    nombre.pop();
+    var apellido = new Stack();
+    apellido.add("Hernandez");
+    apellido.add("López");
+    apellido.add("Torres");
+    apellido.add("Gómez");
+    apellido.add("Gutierrez");
+    apellido.print();
+
+console.log (nombre[0],apellido[0]);
+
+
+
+
+
+    </script>
+  </body>
+</html>
